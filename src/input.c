@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #define LSH_RL_BUFFER 1024
 
-void lsh_read_line(void){
+char *lsh_read_line(void){
     int bufsize = LSH_RL_BUFFER;
     int position = 0;
     char *buffer = malloc(sizeof(char) * bufsize); // The caller will free the allocated memory
